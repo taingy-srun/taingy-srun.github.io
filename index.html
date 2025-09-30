@@ -9,14 +9,18 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
         <!--font-family-->
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
-        
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+		<link href="https://fonts.cdnfonts.com/css/alan-sans" rel="stylesheet">
+		<style>
+			@import url('https://fonts.cdnfonts.com/css/alan-sans');
+		</style>
+
         <!-- title of site -->
-        <title>Taingy</title>
+        <title>Taingy Srun - Software Engineer</title>
 
         <!-- For favicon png -->
 		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
-       
+
         <!--font-awesome.min.css-->
         <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
@@ -29,22 +33,22 @@
         <!--owl.carousel.css-->
         <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-		
+
         <!--bootstrap.min.css-->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-		
+
 		<!-- bootsnav -->
-		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
-        
+		<link rel="stylesheet" href="assets/css/bootsnav.css" >
+
         <!--style.css-->
         <link rel="stylesheet" href="assets/css/style.css">
-        
+
         <!--responsive.css-->
         <link rel="stylesheet" href="assets/css/responsive.css">
-        
+
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		
+
         <!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -56,454 +60,473 @@
 		<!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-		
-		<!-- top-area Start -->
-		<header class="top-area">
-			<div class="header-area">
-				<!-- Start Navigation -->
-			    <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
 
-			        <div class="container">
-
-			            <!-- Start Header Navigation -->
-			            <div class="navbar-header">
-			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-			                    <i class="fa fa-bars"></i>
-			                </button>
-			                <a class="navbar-brand" href="index.html">taingy srun</a>
-			            </div><!--/.navbar-header-->
-			            <!-- End Header Navigation -->
-
-			            <!-- Collect the nav links, forms, and other content for toggling -->
-			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
-			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-			                <li class=" smooth-menu active"></li>
-								<li class="smooth-menu"><a href="#about">about me</a></li>
-			                    <li class=" smooth-menu"><a href="#education">education</a></li>
-			                    <li class="smooth-menu"><a href="#skills">skills</a></li>
-			                    <li class="smooth-menu"><a href="#experience">experience</a></li>
-			                </ul><!--/.nav -->
-			            </div><!-- /.navbar-collapse -->
-			        </div><!--/.container-->
-			    </nav><!--/nav-->
-			    <!-- End Navigation -->
-			</div><!--/.header-area-->
-
-		    <div class="clearfix"></div>
-
-		</header><!-- /.top-area-->
-		<!-- top-area End -->
-	
-		<!--welcome-hero start -->
-		<section id="welcome-hero" class="welcome-hero">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<div class="header-text">
-							<h2>hi <span>,</span> i am <br> taingy <br> srun <span>.</span>   </h2>
-							<p>software Engineer</p>
-							<a href="assets/download/Taingy.Srun-Resume.pdf" download>download resume</a>
-						</div><!--/.header-text-->
-					</div><!--/.col-->
-				</div><!-- /.row-->
-			</div><!-- /.container-->
-
-		</section><!--/.welcome-hero-->
-		<!--welcome-hero end -->
-
-		<!--about start -->
-		<section id="about" class="about">
-			<div class="section-heading text-center">
-				<h2>about me</h2>
+		<!-- Navigation -->
+		<nav class="modern-nav">
+			<div class="nav-container">
+				<div class="nav-menu" id="nav-menu">
+					<a href="#hero" class="nav-link active">Home</a>
+					<a href="#about" class="nav-link">About</a>
+					<a href="#skills" class="nav-link">Skills</a>
+					<a href="#experience" class="nav-link">Experience</a>
+					<a href="#projects" class="nav-link">Projects</a>
+					<a href="#contact" class="nav-link">Contact</a>
+				</div>
+				<div class="hamburger" id="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 			</div>
+		</nav>
+
+		<!-- Hero Section -->
+		<section id="hero" class="hero-section">
+			<div class="hero-container">
+				<div class="hero-content">
+					<div class="hero-image">
+						<div class="image-container">
+							<img src="assets/images/taingy.jpg" alt="Taingy Srun" class="profile-image">
+							<div class="image-glow"></div>
+						</div>
+					</div>
+					<div class="hero-text">
+						<h1 class="hero-title">
+							<span class="hello">Hello, I'm</span>
+							<span class="name">Taingy Srun</span>
+							<span class="role">Software Engineer</span>
+						</h1>
+						<p class="hero-description">
+							Passionate about creating innovative solutions with 5+ years of experience in full-stack development, mobile applications, and modern technologies.
+						</p>
+						<div class="hero-buttons">
+							<a href="#about" class="btn btn-primary">Explore My Work</a>
+							<a href="assets/download/Taingy.Srun-Resume.pdf" download class="btn btn-secondary">
+								<i class="fa fa-download"></i> Download Resume
+							</a>
+						</div>
+						<div class="social-links">
+							<a href="https://www.linkedin.com/in/taingy-srun" target="_blank" class="social-link">
+								<i class="fa fa-linkedin"></i>
+							</a>
+							<a href="https://github.com/taingy-srun" target="_blank" class="social-link">
+								<i class="fa fa-github"></i>
+							</a>
+							<a href="mailto:taingy.srun23@gmail.com" class="social-link">
+								<i class="fa fa-envelope"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="scroll-indicator">
+					<div class="scroll-arrow">
+						<i class="fa fa-chevron-down"></i>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- About Section -->
+		<section id="about" class="about-section">
 			<div class="container">
+				<div class="section-header">
+					<h2 class="section-title">About Me</h2>
+					<p class="section-subtitle">Get to know me better</p>
+				</div>
 				<div class="about-content">
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="single-about-txt">
-								<br />
-								<h3>
-									I am a Software Engineer with over 5 years of hands-on experience.
-								</h3>
-								<p>
-									Focused on the development of cutting-edge and high-performance web applications and mobile applications tailored for HealthTech, FinTech companies and various industries. Demonstrates proficiency in utilizing Java, Kotlin, PostgreSQL, and Git to ensure efficient source control. Possesses a comprehensive understanding of the software development life cycle and is well-acquainted with Agile work environments.
-								</p>
-								<div class="row">
-									<div class="col-sm-4">
-										<div class="single-about-add-info">
-											<h3>email</h3>
-											<p>taingy.srun23@gmail.com</p>
-										</div>
+					<div class="about-text">
+						<h3 class="about-title">Software Engineer with 5+ years of experience</h3>
+						<p class="about-description">
+							I'm passionate about creating innovative solutions and building high-performance applications.
+							My expertise spans across web and mobile development, with a focus on HealthTech and FinTech industries.
+							I thrive in Agile environments and am committed to delivering quality software that makes a difference.
+						</p>
+						<div class="about-highlights">
+							<div class="highlight-item">
+								<div class="highlight-icon">
+									<i class="fa fa-code"></i>
+								</div>
+								<div class="highlight-content">
+									<h4>Full-Stack Development</h4>
+									<p>Experienced in both frontend and backend technologies</p>
+								</div>
+							</div>
+							<div class="highlight-item">
+								<div class="highlight-icon">
+									<i class="fa fa-mobile"></i>
+								</div>
+								<div class="highlight-content">
+									<h4>Mobile Applications</h4>
+									<p>Native Android development with Java & Kotlin</p>
+								</div>
+							</div>
+							<div class="highlight-item">
+								<div class="highlight-icon">
+									<i class="fa fa-users"></i>
+								</div>
+								<div class="highlight-content">
+									<h4>Agile Methodology</h4>
+									<p>Proficient in Scrum and collaborative development</p>
+								</div>
+							</div>
+						</div>
+						<div class="about-info">
+							<div class="info-item">
+								<span class="info-label">Email:</span>
+								<span class="info-value">taingy.srun23@gmail.com</span>
+							</div>
+							<div class="info-item">
+								<span class="info-label">Education:</span>
+								<span class="info-value">MS Computer Science, Maharishi International University</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Skills Section -->
+		<section id="skills" class="skills-section">
+			<div class="container">
+				<div class="section-header">
+					<h2 class="section-title">Skills & Expertise</h2>
+					<p class="section-subtitle">Technologies I work with</p>
+				</div>
+				<div class="skills-content">
+					<div class="skills-categories">
+						<div class="skill-category">
+							<h3 class="category-title">Backend</h3>
+							<div class="skill-tags">
+								<span class="skill-tag">Java</span>
+								<span class="skill-tag">Kotlin</span>
+								<span class="skill-tag">Spring Boot</span>
+								<span class="skill-tag">Node.js</span>
+								<span class="skill-tag">REST APIs</span>
+								<span class="skill-tag">Microservices</span>
+							</div>
+						</div>
+						<div class="skill-category">
+							<h3 class="category-title">Frontend</h3>
+							<div class="skill-tags">
+								<span class="skill-tag">JavaScript</span>
+								<span class="skill-tag">TypeScript</span>
+								<span class="skill-tag">Angular</span>
+								<span class="skill-tag">React</span>
+								<span class="skill-tag">HTML5</span>
+								<span class="skill-tag">CSS3</span>
+								<span class="skill-tag">SASS</span>
+							</div>
+						</div>
+						<div class="skill-category">
+							<h3 class="category-title">Mobile</h3>
+							<div class="skill-tags">
+								<span class="skill-tag">Android</span>
+								<span class="skill-tag">Kotlin</span>
+								<span class="skill-tag">Java</span>
+								<span class="skill-tag">Android Studio</span>
+								<span class="skill-tag">Material Design</span>
+							</div>
+						</div>
+						<div class="skill-category">
+							<h3 class="category-title">Database</h3>
+							<div class="skill-tags">
+								<span class="skill-tag">PostgreSQL</span>
+								<span class="skill-tag">MongoDB</span>
+								<span class="skill-tag">MySQL</span>
+							</div>
+						</div>
+						<div class="skill-category">
+							<h3 class="category-title">Tools & Others</h3>
+							<div class="skill-tags">
+								<span class="skill-tag">Git</span>
+								<span class="skill-tag">Docker</span>
+								<span class="skill-tag">AWS</span>
+								<span class="skill-tag">Agile/Scrum</span>
+								<span class="skill-tag">CI/CD</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Experience Section -->
+		<section id="experience" class="experience-section">
+			<div class="container">
+				<div class="section-header">
+					<h2 class="section-title">Professional Experience</h2>
+					<p class="section-subtitle">My journey in software development</p>
+				</div>
+				<div class="experience-timeline">
+					<div class="timeline-item">
+						<div class="timeline-dot"></div>
+						<div class="timeline-content">
+							<div class="experience-card">
+								<div class="experience-header">
+									<h3 class="job-title">Software Engineer</h3>
+									<div class="company-info">
+										<h4 class="company-name">CuraPatient</h4>
+										<span class="location">Irvine, CA</span>
+									</div>
+									<span class="duration">Apr 2024 - Aug 2025</span>
+								</div>
+								<div class="experience-description">
+									<p>Developed cutting-edge web applications using Angular and implemented robust REST APIs with Java Spring Boot. Enhanced Android applications with improved UX/UI design and utilized Agile methodology for efficient project delivery.</p>
+									<div class="tech-stack">
+										<span class="tech-tag">Angular</span>
+										<span class="tech-tag">Java</span>
+										<span class="tech-tag">Spring Boot</span>
+										<span class="tech-tag">Android</span>
+										<span class="tech-tag">Agile</span>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-offset-1 col-sm-5">
-							<div class="single-about-img">
-								<img src="assets/images/taingy.jpeg" alt="profile_image">
-								<div class="about-list-icon">
-									<ul>
-										<li>
-											<a href="https://www.linkedin.com/in/taingy-srun" target="_blank">
-												<i  class="fa fa-linkedin" aria-hidden="true"></i>
-											</a>
-										</li><!-- / li -->
-										<li>
-											<a href="https://github.com/taingy-srun" target="_blank">
-												<i  class="fa fa-github" aria-hidden="true"></i>
-											</a>
-										</li><!-- / li -->
-										<li>
-											<a href="https://twitter.com/TaingySrun" target="_blank">
-												<i  class="fa fa-twitter" aria-hidden="true"></i>
-											</a>
-										</li><!-- / li -->
-									</ul><!-- / ul -->
-								</div><!-- /.about-list-icon -->
+					</div>
 
+					<div class="timeline-item">
+						<div class="timeline-dot"></div>
+						<div class="timeline-content">
+							<div class="experience-card">
+								<div class="experience-header">
+									<h3 class="job-title">Software Developer</h3>
+									<div class="company-info">
+										<h4 class="company-name">Pi Pay</h4>
+										<span class="location">Phnom Penh, Cambodia</span>
+									</div>
+									<span class="duration">Nov 2020 - Dec 2022</span>
+								</div>
+								<div class="experience-description">
+									<p>Contributed to multiple payment applications including customer apps, merchant POS systems, and backend infrastructure. Implemented KHQR code functionality, bill payments, and phone top-up APIs, significantly improving payment processes and user engagement.</p>
+									<div class="tech-stack">
+										<span class="tech-tag">Java</span>
+										<span class="tech-tag">Kotlin</span>
+										<span class="tech-tag">Spring Boot</span>
+										<span class="tech-tag">PostgreSQL</span>
+										<span class="tech-tag">Payment APIs</span>
+									</div>
+								</div>
 							</div>
+						</div>
+					</div>
 
+					<div class="timeline-item">
+						<div class="timeline-dot"></div>
+						<div class="timeline-content">
+							<div class="experience-card">
+								<div class="experience-header">
+									<h3 class="job-title">Mobile Developer</h3>
+									<div class="company-info">
+										<h4 class="company-name">Agribuddy</h4>
+										<span class="location">Siem Reap, Cambodia</span>
+									</div>
+									<span class="duration">Jun 2019 - Oct 2020</span>
+								</div>
+								<div class="experience-description">
+									<p>Developed critical features including attendance tracking and offline report storage, achieving 100% adoption rate and reducing data loss risk by 50%. Focused on creating reliable mobile solutions for agricultural management.</p>
+									<div class="tech-stack">
+										<span class="tech-tag">Android</span>
+										<span class="tech-tag">Java</span>
+										<span class="tech-tag">Offline Storage</span>
+										<span class="tech-tag">AgriTech</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-dot"></div>
+						<div class="timeline-content">
+							<div class="experience-card">
+								<div class="experience-header">
+									<h3 class="job-title">Android Developer</h3>
+									<div class="company-info">
+										<h4 class="company-name">TrueMoney</h4>
+										<span class="location">Phnom Penh, Cambodia</span>
+									</div>
+									<span class="duration">Sep 2018 - Jun 2019</span>
+								</div>
+								<div class="experience-description">
+									<p>Developed innovative Bluetooth printing functionality reducing operational costs and enhanced user interfaces to improve customer satisfaction in the dynamic fintech environment.</p>
+									<div class="tech-stack">
+										<span class="tech-tag">Android</span>
+										<span class="tech-tag">Java</span>
+										<span class="tech-tag">Bluetooth</span>
+										<span class="tech-tag">UI/UX</span>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section><!--/.about-->
-		<!--about end -->
-		
-		<!--education start -->
-		<section id="education" class="education">
-			<div class="section-heading text-center">
-				<h2>education</h2>
-			</div>
+		</section>
+
+		<!-- Projects Section -->
+		<section id="projects" class="projects-section">
 			<div class="container">
-				<div class="education-horizontal-timeline">
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="single-horizontal-timeline">
-								<div class="experience-time">
-									<h2>2022 - 2025</h2>
-									<h3>master <span>of </span> science in computer science</h3>
-								</div><!--/.experience-time-->
-								<div class="timeline-horizontal-border">
-									<i class="fa fa-circle" aria-hidden="true"></i>
-									<span class="single-timeline-horizontal"></span>
+				<div class="section-header">
+					<h2 class="section-title">Featured Projects</h2>
+					<p class="section-subtitle">Some of my notable work</p>
+				</div>
+				<div class="projects-grid">
+					<div class="project-card">
+						<div class="project-image" style="background-image: url('assets/images/web_home.png'); background-size: cover; background-position: center;">
+							<div class="project-overlay">
+								<div class="project-links">
+									<a href="https://github.com/taingy-srun/flexi-rent-full-stack" class="project-link" target="_blank">
+										<i class="fa fa-github"></i>
+									</a>
 								</div>
-								<div class="timeline">
-									<div class="timeline-content">
-										<h4 class="title">
-											Maharishi International University
-										</h4>
-										<h5>Fairfield, IA, USA</h5>
-									</div><!--/.timeline-content-->
-								</div><!--/.timeline-->
 							</div>
 						</div>
-						<div class="col-sm-6">
-							<div class="single-horizontal-timeline">
-								<div class="experience-time">
-									<h2>2014 - 2018</h2>
-									<h3>bachelor <span>of </span> science in information technology</h3>
-								</div><!--/.experience-time-->
-								<div class="timeline-horizontal-border">
-									<i class="fa fa-circle" aria-hidden="true"></i>
-									<span class="single-timeline-horizontal"></span>
+						<div class="project-content">
+							<h3 class="project-title">Flexi Rent Full Stack</h3>
+							<p class="project-description">
+								Full-stack rental management platform built with Spring Boot microservices architecture, featuring scalable backend services and PostgreSQL database.
+							</p>
+							<div class="project-tech">
+								<span class="tech-tag">Spring Boot</span>
+								<span class="tech-tag">Microservices</span>
+								<span class="tech-tag">PostgreSQL</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="project-card">
+						<div class="project-image" style="background-image: url('assets/images/app.png'); background-size: contain; background-position: center; background-repeat: no-repeat; background-color: #ffffff;">
+							<div class="project-overlay">
+								<div class="project-links">
+									<a href="https://github.com/taingy-srun/flexi-rent-app" class="project-link" target="_blank">
+										<i class="fa fa-github"></i>
+									</a>
 								</div>
-								<div class="timeline">
-									<div class="timeline-content">
-										<h4 class="title">
-											build bright university
-										</h4>
-										<h5>Phnom Penh, Cambodia</h5>
-									</div><!--/.timeline-content-->
-								</div><!--/.timeline-->
+							</div>
+						</div>
+						<div class="project-content">
+							<h3 class="project-title">Flexi Rent App</h3>
+							<p class="project-description">
+								Android application for flexible rental management with intuitive property tracking, tenant management, and seamless payment processing.
+							</p>
+							<div class="project-tech">
+								<span class="tech-tag">Android</span>
+								<span class="tech-tag">Kotlin</span>
+								<span class="tech-tag">Java</span>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+		</section>
 
-		</section><!--/.education-->
-		<!--education end -->
-
-		<!--skills start -->
-		<section id="skills" class="skills">
-				<div class="skill-content">
-					<div class="section-heading text-center">
-						<h2>skills</h2>
-					</div>
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="single-skill-content">
-									<div class="barWrapper">
-										<span class="progressText">Java</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-												<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="10" aria-valuemax="100" style="">
-													  
-												</div>
-											</div>
-											<h3>100%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">Android</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="10" aria-valuemax="100" style="">
-												    
-											   </div>
-											</div>
-											<h3>100%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">Kotlin</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10" aria-valuemax="100" style="">
-												   
-											   </div>
-											</div>
-											<h3>85%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">Spring Boot</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="10" aria-valuemax="100" style="">
-												    
-											   </div>
-											</div>
-											<h3>80%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="single-skill-content">
-									<div class="barWrapper">
-										<span class="progressText">PostgreSQL | MongoDB</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-												<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
-													
-												</div>
-											</div>
-											<h3>90%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">Git </span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="10" aria-valuemax="100" style="">
-												    
-											   </div>
-											</div>
-											<h3>100%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">communication</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="10" aria-valuemax="100" style="">
-												   
-											   </div>
-											</div>
-											<h3>97%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText"> Agile | Scrum</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="10" aria-valuemax="100" style="">
-												    
-											   </div>
-											</div>
-											<h3>99%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-								</div>
-							</div>
-						</div><!-- /.row -->
-					</div>	<!-- /.container -->		
-				</div><!-- /.skill-content-->
-
-		</section><!--/.skills-->
-		<!--skills end -->
-
-		<!--experience start -->
-		<section id="experience" class="experience">
-			<div class="section-heading text-center">
-				<h2>experience</h2>
-			</div>
+		<!-- Contact Section -->
+		<section id="contact" class="contact-section">
 			<div class="container">
-				<div class="experience-content">
-						<div class="main-timeline">
-							<ul>
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-offset-1 col-md-5 experience-time-responsive">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														04/2024 - 08/2025
-													</h2>
-													<h3>Software Engineer</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-5">
-												<div class="timeline">
-													<div class="timeline-content text-right">
-														<h4 class="title">
-															CuraPatient
-														</h4>
-														<h5>Irvine, CA</h5>
-														<p class="description">
-															Developed web-based applications utilizing Angular and implemented REST APIs with Java Spring Boot, enhancing overall functionality. 
-															Maintained and improved an Android application by refining user experience and interface design. 
-															Applied Agile methodology to facilitate effective project management and ensure timely delivery of high-quality results.
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5 experience-time-main">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														04/2024 - 08/2025
-													</h2>
-													<h3>Software Engineer</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
-
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-5">
-												<div class="experience-time text-right">
-													<h2>11/2020 - 12/2022</h2>
-													<h3>Software Developer</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5">
-												<div class="timeline">
-													<div class="timeline-content">
-														<h4 class="title">
-															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															Pi Pay
-														</h4>
-														<h5>Phnom Penh, Cambodia</h5>
-														<p class="description">
-															I contributed to Pi Pay applications including Pi Pay for customers, Pi Pay POS for merchants, and Aggregator Backend project, where I implemented features such as KHQR code, and Bill payments, Phone-Top-Up API, resulting in streamlined payment process and increased user engagement. I leveraged technologies such as Java, Kotlin, and Spring Boot with PostgreSQL database.
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
-
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-offset-1 col-md-5 experience-time-responsive">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														06/2019 - 10/2020
-													</h2>
-													<h3>Mobile Developer</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-5">
-												<div class="timeline">
-													<div class="timeline-content text-right">
-														<h4 class="title">
-															Agribuddy
-														</h4>
-														<h5>Siem Reap, Cambodia</h5>
-														<p class="description">
-															At Agribuddy, I focused on building features like Check-Attendance and Storing Reports Offline, contributing to a 100% adoption rate and a 50% reduction in the risk of data loss.
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5 experience-time-main">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														06/2019 - 10/2020
-													</h2>
-													<h3>Mobile Developer</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
-
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-5">
-												<div class="experience-time text-right">
-													<h2>09/2018 - 06/2019</h2>
-													<h3>Android Developer</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5">
-												<div class="timeline">
-													<div class="timeline-content">
-														<h4 class="title">
-															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															TrueMoney
-														</h4>
-														<h5>Phnom Penh, Cambodia</h5>
-														<p class="description">
-															In the dynamic environment of TrueMoney, I developed cost-saving Bluetooth printing functionality and improved user satisfaction by enhancing the user interface.
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
-
-							</ul>
-						</div><!--.main-timeline-->
-					</div><!--.experience-content-->
-			</div>
-
-		</section><!--/.experience-->
-		<!--experience end -->
-
-		<!--footer-copyright start-->
-		<footer id="footer-copyright" class="footer-copyright">
-			<div class="container">
-				<div class="hm-footer-copyright text-center">
-					<p>
-						&copy; copyright taingy srun.
-					</p><!--/p-->
-				</div><!--/.text-center-->
-			</div><!--/.container-->
-
-			<div id="scroll-Top">
-				<div class="return-to-top">
-					<i class="fa fa-angle-up " id="scroll-top" ></i>
+				<div class="section-header">
+					<h2 class="section-title">Let's Work Together</h2>
+					<p class="section-subtitle">Ready to bring your ideas to life</p>
 				</div>
-				
-			</div><!--/.scroll-Top-->
-			
-        </footer><!--/.footer-copyright-->
-		<!--footer-copyright end-->
+				<div class="contact-content">
+					<div class="contact-info">
+						<div class="contact-item">
+							<div class="contact-icon">
+								<i class="fa fa-envelope"></i>
+							</div>
+							<div class="contact-details">
+								<h3>Email</h3>
+								<p>taingy.srun23@gmail.com</p>
+							</div>
+						</div>
+						<div class="contact-item">
+							<div class="contact-icon">
+								<i class="fa fa-linkedin"></i>
+							</div>
+							<div class="contact-details">
+								<h3>LinkedIn</h3>
+								<p>linkedin.com/in/taingy-srun</p>
+							</div>
+						</div>
+					</div>
+					<div class="contact-cta">
+						<h3>Ready to start a project?</h3>
+						<p>I'm always interested in new opportunities and challenging projects. Let's discuss how we can work together to create something amazing.</p>
+						<div class="cta-buttons">
+							<a href="mailto:taingy.srun23@gmail.com" class="btn btn-primary">
+								<i class="fa fa-envelope"></i> Send Email
+							</a>
+							<a href="https://www.linkedin.com/in/taingy-srun" target="_blank" class="btn btn-secondary">
+								<i class="fa fa-linkedin"></i> Connect on LinkedIn
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Chatbot -->
+		<div class="chatbot-container" id="chatbot-container">
+			<div class="chatbot-header">
+				<h4>Ask me about Taingy!</h4>
+				<button class="chatbot-close" id="chatbot-close">
+					<i class="fa fa-times"></i>
+				</button>
+			</div>
+			<div class="chatbot-messages" id="chatbot-messages">
+				<div class="bot-message">
+					<div class="message-content">
+						Hi! I'm Taingy's AI assistant. Feel free to ask me about her experience, skills, education, or projects!
+					</div>
+				</div>
+				<div class="chatbot-suggestions">
+					<button class="suggestion-btn" data-question="Tell me about Taingy's experience">Tell me about her experience</button>
+					<button class="suggestion-btn" data-question="What are Taingy's key skills?">What are her key skills?</button>
+					<button class="suggestion-btn" data-question="What is Taingy's educational background?">What is her education?</button>
+				</div>
+			</div>
+			<div class="chatbot-input-container">
+				<input type="text" id="chatbot-input" placeholder="Ask about her experience, skills, etc..." />
+				<button id="chatbot-send">
+					<i class="fa fa-paper-plane"></i>
+				</button>
+			</div>
+		</div>
+		<button class="chatbot-toggle" id="chatbot-toggle">
+			<i class="fa fa-comments"></i>
+		</button>
+
+		<!-- Footer -->
+		<footer class="modern-footer">
+			<div class="container">
+				<div class="footer-content">
+					<div class="footer-brand">
+						<h3>Taingy Srun</h3>
+						<p>Software Engineer crafting digital solutions</p>
+					</div>
+					<div class="footer-links">
+						<div class="footer-section">
+							<h4>Navigation</h4>
+							<a href="#hero">Home</a>
+							<a href="#about">About</a>
+							<a href="#skills">Skills</a>
+							<a href="#experience">Experience</a>
+						</div>
+						<div class="footer-section">
+							<h4>Connect</h4>
+							<a href="https://www.linkedin.com/in/taingy-srun" target="_blank">LinkedIn</a>
+							<a href="https://github.com/taingy-srun" target="_blank">GitHub</a>
+							<a href="mailto:taingy.srun23@gmail.com">Email</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>&copy; 2025 Taingy Srun. All rights reserved.</p>
+					<div class="scroll-to-top" id="scroll-to-top">
+						<i class="fa fa-chevron-up"></i>
+					</div>
+				</div>
+			</div>
+		</footer>
 		
 		<!-- Include all js compiled plugins (below), or include individual files as needed -->
 
