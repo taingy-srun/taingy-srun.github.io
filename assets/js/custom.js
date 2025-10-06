@@ -53,10 +53,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     behavior: 'smooth'
                 });
 
-                // Update active nav link
-                navLinks.forEach(nav => nav.classList.remove('active'));
-                this.classList.add('active');
-
                 // Close mobile menu
                 if (navMenu.classList.contains('active')) {
                     navMenu.classList.remove('active');
@@ -72,17 +68,26 @@ document.addEventListener('DOMContentLoaded', function() {
         const sections = document.querySelectorAll('section');
 
         sections.forEach(section => {
-            const sectionTop = section.offsetTop - 100;
+            const sectionTop = section.offsetTop - 150;
             const sectionHeight = section.clientHeight;
+            const scrollPosition = window.scrollY;
 
-            if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
                 current = section.getAttribute('id');
             }
         });
 
+        // If we're near the bottom of the page, set current to the last section
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 100) {
+            const lastSection = sections[sections.length - 1];
+            if (lastSection) {
+                current = lastSection.getAttribute('id');
+            }
+        }
+
         navLinks.forEach(link => {
             link.classList.remove('active');
-            if (link.getAttribute('href') === `#${current}`) {
+            if (current && link.getAttribute('href') === `#${current}`) {
                 link.classList.add('active');
             }
         });
