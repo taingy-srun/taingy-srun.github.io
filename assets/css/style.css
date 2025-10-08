@@ -745,11 +745,18 @@ img {
     padding: 24px;
 }
 
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
 .project-title {
     font-size: 1.7rem;
     font-weight: 600;
-    margin-bottom: 12px;
     color: var(--text-primary);
+    margin: 0;
 }
 
 .project-description {
