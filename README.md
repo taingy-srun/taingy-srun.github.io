@@ -42,4 +42,4 @@ The `assets/` directory contains:
 ## Contact
 
 - **Name**: Taingy Srun
-- **Email**: taingy.srun20@gmail.com
+- **Email**: taingy.srun23@gmail.com
