@@ -262,7 +262,7 @@ document.addEventListener('DOMContentLoaded', function() {
         name: "Taingy Srun",
         email: "taingy.srun@outlook.com",
         phone: "(949) 969-7793",
-        location: "Irvine, CA",
+        location: "California, USA",
         linkedin: "https://www.linkedin.com/in/taingy-srun",
         github: "https://github.com/taingy-srun",
         summary: "Software Engineer with 5+ years of experience designing, developing, and delivering scalable web and mobile applications across healthcare, fintech, and agri-tech industries. Skilled in full-stack development using Java Spring Boot, Angular, Kotlin, SQL, and Git.",
