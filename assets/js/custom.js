@@ -260,7 +260,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Resume data
     const resumeData = {
         name: "Taingy Srun",
-        email: "taingy.srun23@gmail.com",
+        email: "taingy.srun@outlook.com",
         phone: "(949) 969-7793",
         location: "Irvine, CA",
         linkedin: "https://www.linkedin.com/in/taingy-srun",
@@ -293,7 +293,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 ]
             },
             {
-                title: "Software Developer",
+                title: "Software Engineer",
                 company: "Pi Pay",
                 location: "Cambodia",
                 period: "11/2020 – 12/2022",
@@ -305,7 +305,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 ]
             },
             {
-                title: "Android Developer",
+                title: "Software Engineer",
                 company: "Agribuddy",
                 location: "Cambodia",
                 period: "06/2019 – 10/2020",
