@@ -352,6 +352,7 @@ img {
     position: relative;
     width: 280px;
     height: 280px;
+    margin-top: 20px;
 }
 
 .profile-image {
