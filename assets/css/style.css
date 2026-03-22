@@ -777,7 +777,7 @@ img {
 .project-description {
     color: var(--text-secondary);
     line-height: 1.6;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     font-size: 1.5rem;
 }
 
@@ -791,9 +791,8 @@ img {
 		8. Contact Section
 --------------------------------------*/
 .contact-section {
-    padding: 100px 0;
-    background: var(--background-primary);
-    margin-bottom: 100px;
+    padding: 100px 0 150px;
+    background: var(--background-secondary);
 }
 
 .contact-content {
