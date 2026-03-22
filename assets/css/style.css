@@ -350,8 +350,8 @@ img {
 
 .image-container {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
 }
 
 .profile-image {
@@ -444,7 +444,7 @@ img {
 
 .highlight-content p {
     color: var(--text-secondary);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .about-info {
@@ -520,7 +520,7 @@ img {
     color: white;
     padding: 12px 20px;
     border-radius: 20px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 500;
     transition: var(--transition);
 }
@@ -540,14 +540,14 @@ img {
 
 .experience-timeline {
     position: relative;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .experience-timeline::before {
     content: '';
     position: absolute;
-    left: 50%;
+    left: 0;
     top: 0;
     bottom: 0;
     width: 2px;
@@ -562,8 +562,7 @@ img {
 
 .timeline-dot {
     position: absolute;
-    left: 50%;
-    top: 20px;
+    left: 0;
     width: 16px;
     height: 16px;
     background: var(--primary-color);
@@ -573,17 +572,25 @@ img {
     box-shadow: 0 0 0 6px white, 0 0 0 8px var(--primary-color);
 }
 
-.timeline-content {
-    width: calc(50% - 40px);
-    padding: 0 20px;
+.timeline-dot:last-child {
+    bottom: 6px;
 }
 
+.timeline-content {
+    padding-left: 5%;
+    line-height: 1.8;
+}
+
+.timeline-content ul li {
+    padding-left: 10px;
+    margin-left: 1%;
+}
 .timeline-item:nth-child(odd) .timeline-content {
-    margin-left: 0;
+    /* margin-left: 0; */
 }
 
 .timeline-item:nth-child(even) .timeline-content {
-    margin-left: calc(50% + 40px);
+    /* margin-left: calc(50% + 40px); */
 }
 
 .experience-card {
@@ -605,11 +612,19 @@ img {
     margin-bottom: 20px;
 }
 
+.job-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
 .job-title {
     font-size: 1.8rem;
     font-weight: 600;
     color: var(--text-primary);
     margin-bottom: 8px;
+    margin-top: 8px;
 }
 
 .company-info {
@@ -627,17 +642,14 @@ img {
 
 .location {
     color: var(--text-secondary);
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .duration {
-    display: inline-block;
-    background: var(--background-secondary);
-    color: var(--text-secondary);
     padding: 8px 16px;
-    border-radius: 12px;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: 500;
+    font-style: italic;
 }
 
 .experience-description p {
@@ -650,15 +662,16 @@ img {
 .tech-stack {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 12px;
+    margin-top: 20px;
 }
 
 .tech-tag {
-    background: var(--background-secondary);
+    /* background: var(--background-secondary); */
     color: var(--text-primary);
-    padding: 4px 10px;
-    border-radius: 12px;
-    font-size: 0.8rem;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 1.3rem;
     font-weight: 500;
     border: 1px solid var(--border-color);
 }
@@ -764,7 +777,7 @@ img {
     color: var(--text-secondary);
     line-height: 1.6;
     margin-bottom: 16px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .project-tech {
@@ -778,7 +791,8 @@ img {
 --------------------------------------*/
 .contact-section {
     padding: 100px 0;
-    background: var(--background-secondary);
+    background: var(--background-primary);
+    margin-bottom: 100px;
 }
 
 .contact-content {
@@ -829,7 +843,7 @@ img {
 
 .contact-details p {
     color: var(--text-secondary);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .contact-cta {
@@ -853,7 +867,7 @@ img {
     color: var(--text-secondary);
     margin-bottom: 32px;
     line-height: 1.7;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 .cta-buttons {
@@ -1036,7 +1050,7 @@ img {
     }
 
     .nav-menu .nav-link {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         margin: 16px 0;
         padding: 12px 0;
     }
@@ -1062,7 +1076,7 @@ img {
     }
 
     .section-subtitle {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     .hero-section {
@@ -1187,7 +1201,7 @@ img {
     }
 
     .hero-title .role {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         margin-top: 4px;
     }
 
@@ -1283,7 +1297,7 @@ img {
     }
 
     .category-title {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
     .skill-tag {
@@ -1292,7 +1306,7 @@ img {
     }
 
     .job-title {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
     .company-name {
@@ -1304,7 +1318,7 @@ img {
     }
 
     .duration {
-        font-size: 0.8rem;
+        font-size: 1rem;
         padding: 6px 12px;
     }
 
@@ -1318,7 +1332,7 @@ img {
     }
 
     .project-title {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
     .project-description {
@@ -1326,7 +1340,7 @@ img {
     }
 
     .contact-details h3 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     .contact-details p {
@@ -1389,7 +1403,7 @@ img {
     }
 
     .hero-title .hello {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .hero-title .role {
@@ -1402,7 +1416,7 @@ img {
     }
 
     .hero-buttons .btn {
-        font-size: 0.8rem;
+        font-size: 1rem;
         padding: 10px 14px;
     }
 
